@@ -14,7 +14,7 @@ namespace WebAdvert.SearchWorker
             {
                 string? url = @"https://elastic.appmode.dev/";// configuration.GetSection("ES").GetValue<string>("URL");
                 string? user = "elastic";//configuration.GetSection("ES").GetValue<string>("UserName");
-                string? password = "oxn4J3v9oqJ8sud"; //configuration.GetSection("ES").GetValue<string>("Password");
+                string? password = "6Mz=ZgQ5j+evfwxJtCzH"; //configuration.GetSection("ES").GetValue<string>("Password");
                 ConnectionSettings settings = new ConnectionSettings(new Uri(url)).DefaultIndex("adverts").BasicAuthentication(user, password);
                 _elasticClient = new ElasticClient(settings);
             }
